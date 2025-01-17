@@ -1,0 +1,72 @@
+@import "../../../roote.css";
+
+.container {
+  padding: 2rem;
+  background-color: var(--background-color); /* Asosiy fon rangi */
+  border-radius: var(--border-radius, 8px); /* Dinamik radius */
+  box-shadow: var(--box-shadow, 0 2px 4px rgba(0, 0, 0, 0.1)); /* Soya */
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: var(--font-large, 1.5rem); /* Sarlavha shrift o'lchami */
+  color: var(--text-color); /* Asosiy matn rangi */
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: var(--font-medium, 1.25rem); /* Kichik ekran uchun sarlavha */
+  }
+}
+
+.weekPicker {
+  margin-bottom: 1rem;
+}
+
+.taskList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.taskItem {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--border-color, #ddd); /* Dinamik chegara rangi */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskItem.completed {
+  text-decoration: line-through;
+  color: var(--text-secondary-color, #999); /* Ikkinchi darajali matn rangi */
+}
+
+.taskToggle {
+  cursor: pointer;
+  color: var(--primary-color); /* Asosiy rang */
+}
+
+.taskToggle:hover {
+  text-decoration: underline;
+}
+
+.addTaskButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--border-radius, 4px); /* Dinamik radius */
+  background-color: var(--secondary-color); /* Tugma fon rangi */
+  color: var(--text-color, #fff); /* Tugma matn rangi */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addTaskButton:hover {
+  background-color: var(--secondary-color-hover, #218838); /* Hover rang */
+}

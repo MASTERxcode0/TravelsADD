@@ -1,0 +1,20 @@
+@import "./componenta/roote.css";
+
+/* Global Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  width: 100%;
+  background-color: var(
+    --background-color
+  ); /* Foydalanilgan asosiy fon rangi */
+  color: var(--text-color); /* Matn rangi */
+  font-family: "Arial", sans-serif; /* Matn shrift turi */
+  font-size: var(--font-medium); /* Standart shrift o'lchami */
+  line-height: 1.5; /* Qatorlar oralig'i */
+}

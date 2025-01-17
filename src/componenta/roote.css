@@ -1,0 +1,28 @@
+:root {
+  /* Colors */
+  --primary-color: #226160; /* Asosiy rang */
+  --secondary-color: #ffffff; /* Ikkinchi darajali rang */
+  --accent-color: #935f4c; /* Qo'shimcha rang */
+  --background-color: #ffffff; /* Fonga rang */
+  --text-color: #fff; /* Oq matn */
+  --shadow-color: rgba(0, 0, 0, 0.1); /* Soyaning rangi */
+  --primary-bg-color: #797777; /* Asosiy foni */
+  --hover-bg-color: #444; /* Hover qilingan fon */
+  --hover-text-color: #48ff00; /* Hoverdagi matn */
+  --main-content-bg-color: #ffffff; /* Kontent fon */
+  --heading-color: #fffdfd; /* Yorqin oq sarlavha */
+
+  /* Font Sizes */
+  --font-small: 12px; /* Kichik shrift */
+  --font-medium: 16px; /* O'rta shrift */
+  --font-large: 24px; /* Katta shrift */
+  --font-xlarge: 32px; /* Juda katta shrift */
+
+  /* Borders and Radius */
+  --border-radius: 8px; /* Burchaklarning egilishi */
+  --border-color: #424242; /* Border rangi */
+  --button-border-radius: 6px; /* Tugmalar burchagi */
+
+  /* Shadows */
+  --box-shadow: 0 4px 8px var(--shadow-color);
+}

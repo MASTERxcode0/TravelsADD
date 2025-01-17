@@ -1,0 +1,23 @@
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100dvh;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  font-weight: bold;
+}
+
+.carousel-inner img {
+  object-fit: cover;
+}
+
+.btn-outline-danger {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}

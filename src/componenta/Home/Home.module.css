@@ -1,0 +1,84 @@
+@import "../roote.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin-left: 20%;
+  height: 100dvh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--primary-text-color);
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  /* Gradient va rasmni birlashtirish */
+  background: linear-gradient(60deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url("../../assets/images/samarqand.jpg");
+  background-size: cover; /* Rasmni konteynerga moslashtirish */
+  background-position: end; /* Markazga joylash */
+  background-repeat: no-repeat; /* Rasmni takrorlashni o'chirish */
+}
+
+.Users {
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Sarlavha (Heading) */
+.h1 {
+  font-size: 3em;
+  margin: 20px 0;
+  text-align: right;
+  color: #ffffff;
+}
+
+/* Search component joylashuvi */
+.sorch {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px 0;
+}
+
+/* Responsive dizayn uchun media queries */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  h1 {
+    padding-top: 20px;
+    font-size: 1.8em;
+  }
+
+  .sorch {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .Users {
+    gap: 5px;
+  }
+
+  .sorch {
+    width: 100%;
+    margin: 15px 0;
+  }
+}

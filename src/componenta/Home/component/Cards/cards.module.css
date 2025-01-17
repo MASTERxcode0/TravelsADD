@@ -1,0 +1,108 @@
+@import "../../../roote.css";
+/* Umumiy kartani styling qilish */
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  background-color: var(--background-color);
+  max-width: 300px;
+  width: 90%;
+  margin: 10px auto;
+  border: var(--border);
+}
+
+/* Karta ichidagi elementlar uchun styling */
+.cardimage {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cardtitle {
+  font-size: var(--font-size-large);
+  text-align: center;
+  margin: 10px 0;
+  color: black;
+}
+
+.cardcontent {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cardleft,
+.cardright {
+  flex: 1;
+  padding: 8px;
+}
+
+.button {
+  padding: 12px;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--primary-hover-color);
+}
+
+.cardright p {
+  font-size: var(--font-size-medium);
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  font-size: var(--font-size-small);
+  color: #333;
+  margin-bottom: 4px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .card {
+    max-width: 45%;
+  }
+
+  .cardtitle {
+    font-size: var(--font-size-medium);
+  }
+
+  .button {
+    width: 30%;
+    padding: 10px;
+  }
+
+  .cardcontent {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    max-width: 100%;
+  }
+
+  .cardtitle {
+    font-size: var(--font-size-small);
+  }
+
+  ul li {
+    font-size: var(--font-size-xsmall);
+  }
+}

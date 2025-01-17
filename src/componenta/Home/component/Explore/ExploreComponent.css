@@ -1,0 +1,19 @@
+/* ExploreComponent.module.css */
+
+@import "../../../roote.css";
+
+.CarsContiner {
+  margin-left: 20%;
+  background: var(--background-color);
+  color: var(--text-color);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .CarsContiner {
+    margin-left: 0;
+  }
+}

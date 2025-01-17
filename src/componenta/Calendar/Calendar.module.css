@@ -1,0 +1,70 @@
+@import "../roote.css";
+
+.container {
+  padding: var(--padding-large, 20px);
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: var(--font-family, "Arial", sans-serif);
+}
+
+.title {
+  font-size: var(--font-size-large, 24px);
+  text-align: center;
+  margin-bottom: var(--margin-large, 20px);
+  color: var(--primary-text-color, #333);
+}
+
+.calendarSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-bg-color, #fff);
+  padding: var(--padding-medium, 15px);
+  border: 1px solid var(--border-color, #ddd);
+  border-radius: var(--border-radius, 8px);
+  box-shadow: 0 4px 8px var(--shadow-color, rgba(0, 0, 0, 0.1));
+}
+
+.details {
+  margin-top: var(--margin-medium, 20px);
+  text-align: center;
+  color: var(--secondary-text-color, #666);
+}
+
+.details p {
+  margin: var(--margin-small, 5px) 0;
+  font-size: var(--font-size-medium, 16px);
+}
+
+/* Responsiv dizayn uchun media query */
+@media (max-width: 768px) {
+  .container {
+    padding: var(--padding-medium, 10px);
+  }
+
+  .title {
+    font-size: var(
+      --font-size-medium,
+      20px
+    ); /* O‘rta ekran uchun kichikroq sarlavha */
+  }
+
+  .details p {
+    font-size: var(--font-size-small, 14px);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: var(--padding-small, 5px);
+    margin-bottom: 70px;
+  }
+
+  .title {
+    font-size: var(--font-size-small, 18px); /* Kichik ekran uchun sarlavha */
+  }
+
+  .details p {
+    font-size: var(--font-size-extra-small, 12px);
+  }
+}

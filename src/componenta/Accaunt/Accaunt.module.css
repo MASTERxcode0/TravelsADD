@@ -1,0 +1,165 @@
+/* Accaunt.module.css */
+.container {
+  padding: 20px;
+  background-color: var(--background-color); /* Qo'shimcha rang */
+  border-radius: var(--border-radius); /* Dinamik radius */
+  max-width: 800px;
+  margin: 0 auto;
+  margin-left: 20%;
+}
+
+.title {
+  font-size: var(--font-large); /* Sarlavha shrift o'lchami */
+  margin-bottom: 20px;
+}
+
+.accountDetails {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profileImageContainer {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--shadow-color); /* Soya rangi */
+}
+
+.profileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placeholderImage {
+  font-size: var(--font-small); /* Kichik shrift o'lchami */
+  color: var(--secondary-color); /* Qo'shimcha matn rangi */
+  text-align: center;
+  padding: 10px;
+}
+
+.userInfo p {
+  margin: 5px 0;
+}
+
+.sectionTitle {
+  font-size: var(--font-medium); /* O'rta shrift o'lchami */
+  margin-bottom: 10px;
+}
+
+.fileInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--shadow-color); /* Soya rangi */
+  border-radius: var(--border-radius);
+  font-size: var(--font-medium);
+}
+
+.bioSection {
+  margin-top: 20px;
+}
+
+.textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid var(--shadow-color);
+  border-radius: var(--border-radius);
+  font-size: var(--font-medium);
+}
+
+.bioLength {
+  margin-top: 5px;
+  font-size: var(--font-small);
+  color: var(--secondary-color);
+}
+
+.bioPreview {
+  margin-top: 10px;
+}
+
+.bioText {
+  background-color: var(--secondary-color); /* Matn uchun fon */
+  color: black; /* Matn rangi */
+  padding: 10px;
+  border-radius: var(--border-radius);
+}
+
+/* Responsive dizayn uchun media query */
+@media (max-width: 1200px) {
+  .container {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .title {
+    font-size: calc(var(--font-large) - 2px);
+  }
+
+  .profileImageContainer {
+    width: 110px;
+    height: 110px;
+  }
+
+  .fileInput,
+  .textarea {
+    font-size: calc(var(--font-medium) - 1px);
+  }
+}
+
+@media (max-width: 1100px) {
+  .title {
+    font-size: calc(var(--font-large) - 4px);
+  }
+
+  .profileImageContainer {
+    width: 100px;
+    height: 100px;
+  }
+
+  .fileInput,
+  .textarea {
+    font-size: calc(var(--font-medium) - 2px);
+  }
+}
+
+@media (max-width: 850px) {
+  .title {
+    font-size: calc(var(--font-large) - 6px);
+  }
+
+  .bioSection {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .title {
+    font-size: calc(var(--font-large) - 8px);
+  }
+
+  .fileInput,
+  .textarea {
+    font-size: calc(var(--font-medium) - 4px);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+      margin-bottom: 70px;
+
+  }
+  .bioText {
+    padding: 6px;
+  }
+
+  .bioPreview {
+    margin-top: 6px;
+  }
+}

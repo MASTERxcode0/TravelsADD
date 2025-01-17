@@ -1,0 +1,116 @@
+@import "../../../roote.css";
+
+.container {
+  padding: var(--padding-large, 20px);
+  font-family: var(--font-family, Arial, sans-serif);
+  max-width: var(--max-width, 1200px);
+  margin-left: var(--margin-left, 20%);
+  background-color: var(--background-color, #fff);
+}
+
+.heading {
+  font-size: var(--font-size-large, 24px);
+  text-align: center;
+  margin-bottom: var(--margin-large, 20px);
+  color: var(--text-color, #333);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--gap-large, 20px);
+}
+
+.card {
+  background-color: var(--background-color, #fff);
+  border: 1px solid var(--border-color, #ddd);
+  border-radius: var(--border-radius, 8px);
+  padding: var(--padding-medium, 15px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  width: var(--size-image, 80px);
+  height: var(--size-image, 80px);
+  border-radius: 50%;
+  margin-bottom: var(--margin-small, 10px);
+}
+
+.name {
+  font-size: var(--font-size-medium, 18px);
+  color: var(--primary-color, #007bff);
+  margin-bottom: var(--margin-small, 10px);
+  font-weight: bold;
+}
+
+.text {
+  font-size: var(--font-size-small, 14px);
+  color: var(--primary2-color, #666);
+  margin: var(--margin-small, 5px) 0;
+}
+
+/* Responsiv dizayn uchun media query */
+@media (max-width: 768px) {
+  .container {
+    margin-left: 0;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .name {
+    font-size: 16px;
+  }
+
+  .text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .heading {
+    font-size: 18px;
+  }
+
+  .card {
+    padding: 8px;
+  }
+
+  .image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+}

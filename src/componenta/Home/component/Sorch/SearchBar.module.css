@@ -1,0 +1,83 @@
+@import "../../../roote.css";
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    100deg,
+    #ffffff,
+    #ffffff,
+    #226160
+  ); /* Gradient fon */
+  /* Olovrang */
+  padding: var(--padding-small, 10px);
+  border-radius: var(--border-radius, 5px);
+  width: 100%;
+  max-width: var(--max-width, 600px);
+}
+
+.img {
+  width: 24px;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  background: linear-gradient(
+    100deg,
+    #226160,
+    #ffffff,
+    #ffffff
+  ); /* Gradient fon */
+  color: #000000;
+
+  border-radius: var(--border-radius, 5px);
+  padding: var(--padding-small, 5px) var(--padding-medium, 10px);
+}
+.inputWrapper > input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  margin-left: 10px;
+  outline: none;
+}
+.inputWrapper > input::placeholder {
+  color: #000000; /* Ochiqroq rang yoki shunga o'xshash */
+}
+
+.searchIcon {
+  color: var(--text-color, #fff); /* Ochiq rang */
+  font-size: var(--font-size-medium, 1.2rem);
+  margin-right: var(--margin-medium, 10px);
+}
+
+.searchInput {
+  flex-grow: 1;
+  border: none;
+  background-color: transparent;
+  color: var(--text-color, #fff); /* Ochiq rang */
+  font-size: var(--font-size-small, 1rem);
+  outline: none;
+}
+
+.mapButton {
+  background-color: var(--primary-color, #007bff);
+  border: none;
+  border-radius: var(--border-radius, 5px);
+  padding: var(--padding-small, 10px);
+  margin-left: var(--margin-small, 10px);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mapButton:hover {
+  background-color: var(--secondary-color, #28a745); /* Yashil */
+}
+
+.mapIcon {
+  color: var(--text-color, #fff); /* Ochiq rang */
+  font-size: var(--font-size-medium, 1.2rem);
+}

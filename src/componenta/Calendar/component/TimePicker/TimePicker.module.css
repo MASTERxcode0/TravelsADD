@@ -1,0 +1,35 @@
+@import "../../../roote.css";
+
+.timePicker {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  background-color: var(--background-color, #f9f9f9); /* Asosiy fon rangi */
+  border: 1px solid var(--border-color, #ddd); /* Chegara rangi */
+  border-radius: var(--border-radius, 8px); /* Radius */
+  max-width: 300px;
+  margin: 0 auto;
+  box-shadow: var(--box-shadow, 0 4px 6px rgba(51, 51, 51, 0.1)); /* Soya */
+  font-family: var(--font-family, "Arial, sans-serif"); /* Dinamik shrift */
+}
+
+.timePicker label {
+  font-size: var(--font-medium, 16px); /* Matn shrift o'lchami */
+  color: var(--text-secondary-color, #333); /* Ikkinchi darajali matn rangi */
+}
+
+.input {
+  padding: 0.625rem; /* 10px */
+  width: 100%;
+  border: 1px solid var(--border-color, #ddd); /* Chegara rangi */
+  border-radius: var(--border-radius, 4px); /* Radius */
+  font-size: var(--font-medium, 16px); /* Matn shrift o'lchami */
+  background-color: var(--input-bg-color, #fff); /* Kiritish maydoni foni */
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: var(--focus-color, #3498db); /* Fokusda chegara rangi */
+  outline: none;
+}

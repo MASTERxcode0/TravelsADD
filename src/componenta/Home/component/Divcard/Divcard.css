@@ -1,0 +1,37 @@
+/* Tugma uslubi */
+.btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: linear-gradient(135deg, #226160, #e8e8e8); /* Gradient */
+  color: #ffffff;
+  border: none;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* Kichik ekranlar uchun optimizatsiya */
+@media (max-width: 768px) {
+  .btn {
+    width: 50px; /* Tugma kengligi kichik ekranlarda */
+    height: 50px; /* Tugma balandligi kichik ekranlarda */
+  }
+
+  .btn div {
+    font-size: 20px; /* Ikonka o‘lchami kichik ekranlar uchun */
+  }
+}
+
+/* Umumiy konteyner joylashuvi */
+.container {
+  padding: 20px;
+}
+
+.d-flex {
+  gap: 15px; /* Tugmalar orasidagi masofa */
+}
